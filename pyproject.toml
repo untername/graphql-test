@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "backend-test"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+strawberry-graphql = {extras = ["fastapi"], version = "^0.217.1"}
+yoyo-migrations = "^8.2.0"
+psycopg = {extras = ["binary", "pool"], version = "^3.1.17"}
+databases = {extras = ["asyncpg"], version = "^0.8.0"}
+setuptools = "^69.0.3"
+uvicorn = {extras = ["standard"], version = "^0.25.0"}
+pydantic-settings = "^2.1.0"
+pypika = "^0.48.9"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.8.0"
+ruff = "^0.1.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
